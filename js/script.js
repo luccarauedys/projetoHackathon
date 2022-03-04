@@ -60,8 +60,14 @@ function renderInfos(infos) {
   const home = document.getElementById('home');
   home.style.display = 'none';
 
-  if(situation === "Rain" || situation === "rain"){
+  if(situation.includes("Rain") || situation.includes("rain")){
     document.body.style.backgroundImage = "url(./images/rain.jpg)";
+  } else if (situation.includes("clouds")){
+    document.body.style.backgroundImage = "url(./images/clouds.jpg)";
+  } else if (situation.includes("clear")){
+    document.body.style.backgroundImage = "url(./images/clearSky.jpg)";
+  } else if (situation.includes("snow")){
+    document.body.style.backgroundImage = "url(./images/snow.jpg)";
   }
 
   const main = document.getElementById('main');
