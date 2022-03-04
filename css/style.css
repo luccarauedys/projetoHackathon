@@ -18,7 +18,7 @@ body {
   display: grid;
   place-items: center;
 
-  background-image: url(/images/ceu.jpg);
+  background-image: url(/images/sky.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -103,7 +103,6 @@ section button:hover{
 .infos{
   color: #222;
 }
-
 
 @media screen and (max-width: 900px){
   .container {

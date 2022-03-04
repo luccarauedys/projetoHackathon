@@ -66,7 +66,6 @@ function renderInfos(infos) {
 
   const main = document.getElementById('main');
   main.innerHTML = `
-  <section>
       <div class="container glass" id="weatherInfos">
         <div class="mainInfos">
           <h3>${city}, ${country}</h3>
