@@ -29,7 +29,8 @@ section {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);
 }
-section h1{
+.home-title{
+  color: #D5D9E2;
   font-size: 40px;
   font-weight: bold;
   line-height: 1.2;
@@ -43,7 +44,7 @@ section button {
   border: 2px solid #05303F;
   font-size: 16px;
   font-weight: bold;
-  color: white;  
+  color: #D5D9E2;  
   border-radius: 6px;
   padding: 10px;
 }
@@ -55,7 +56,7 @@ section button:hover{
 
 .container {
   width: 80%;
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
 
   display: flex;
@@ -108,7 +109,7 @@ section button:hover{
   .container {
     width: 50%;
   }
-  section h1 {
+  .home-title {
     font-size: 35px;
     line-height: 1.2;
   }
