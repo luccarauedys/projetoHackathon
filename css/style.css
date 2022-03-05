@@ -18,7 +18,7 @@ body {
   display: grid;
   place-items: center;
 
-  background-image: url(/images/sky.jpg);
+  background-image: url(../images/sky.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
