@@ -13,9 +13,6 @@ function getLocation(geolocation) {
   let longitude = geolocation.coords.longitude.toString();
 
   callAPI(latitude, longitude);
-
-  console.log(latitude);
-  console.log(longitude);
 }
 
 function callAPI(lat, lon) {
@@ -47,8 +44,6 @@ function getWeather(response) {
   tempMax = (tempMax - 273).toFixed(1);
   tempMin = (tempMin - 273).toFixed(1);
 
-  console.log(response);
-
   const infos = [temp, feelsLike, situation, tempMin, tempMax, city, country];
 
   renderInfos(infos);
@@ -61,7 +56,6 @@ function renderInfos(infos) {
   home.style.display = 'none';
 
   if(situation.includes("Rain") || situation.includes("rain")){
-    console.log("ok")
     document.body.style.backgroundImage = "url(/images/rain.jpg)";
   } 
   else if (situation.includes("Clouds") || situation.includes("clouds")){
