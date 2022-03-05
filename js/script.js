@@ -56,16 +56,16 @@ function renderInfos(infos) {
   home.style.display = 'none';
 
   if(situation.includes("Rain") || situation.includes("rain")){
-    document.body.style.backgroundImage = "url('../images/rain.jpg')";
+    document.body.classList.add("bg-rain");
   } 
   else if (situation.includes("Clouds") || situation.includes("clouds")){
-    document.body.style.backgroundImage = "url('../images/clouds.jpg')";
+    document.body.classList.add("bg-clouds");
   } 
   else if (situation.includes("Clear") || situation.includes("clear")){
-    document.body.style.backgroundImage = "url('../images/clearSky.jpg')";
+    document.body.classList.add(".bg-clear-sky");
   } 
   else if (situation.includes("Snow") || situation.includes("snow")){
-    document.body.style.backgroundImage = "url('../images/snow.jpg')";
+    document.body.classList.add("bg-snow");
   } 
 
   const main = document.getElementById('main');

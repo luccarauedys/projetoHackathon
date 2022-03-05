@@ -109,6 +109,32 @@ section button:hover{
   color: black;
 }
 
+.bg-rain{
+  background-image: url(../images/rain.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-clouds{
+  background-image: url(../images/clouds.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-clear-sky{
+  background-image: url(../images/clearSky.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-snow{
+  background-image: url(../images/snow.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
 @media screen and (max-width: 900px){
   .container {
     width: 50%;
