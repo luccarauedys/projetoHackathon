@@ -16,11 +16,11 @@ function getLocation(geolocation) {
 }
 
 function callAPI(lat, lon) {
-  const URL = `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=f068bf83c3071f1f4410c84b9d67694f`;
+  const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=f068bf83c3071f1f4410c84b9d67694f`;
   const promise = axios.get(`${URL}`);
   promise.then(getWeather);
   promise.catch((err) => {
-    console.error('Desculpe, erro interno.');
+    console.error(err);
   });
 }
 
