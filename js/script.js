@@ -61,21 +61,25 @@ function renderInfos(infos) {
   home.style.display = 'none';
 
   if(situation.includes("Rain") || situation.includes("rain")){
-    document.body.style.backgroundImage = "url(./images/rain.jpg)";
-  } else if (situation.includes("clouds")){
-    document.body.style.backgroundImage = "url(./images/clouds.jpg)";
-  } else if (situation.includes("clear")){
-    document.body.style.backgroundImage = "url(./images/clearSky.jpg)";
-  } else if (situation.includes("snow")){
-    document.body.style.backgroundImage = "url(./images/snow.jpg)";
-  }
+    console.log("ok")
+    document.body.style.backgroundImage = "url(/images/rain.jpg)";
+  } 
+  else if (situation.includes("Clouds") || situation.includes("clouds")){
+    document.body.style.backgroundImage = "url(/images/clouds.jpg)";
+  } 
+  else if (situation.includes("Clear") || situation.includes("clear")){
+    document.body.style.backgroundImage = "url(/images/clearSky.jpg)";
+  } 
+  else if (situation.includes("Snow") || situation.includes("snow")){
+    document.body.style.backgroundImage = "url(/images/snow.jpg)";
+  } 
 
   const main = document.getElementById('main');
   main.innerHTML = `
       <div class="container glass" id="weatherInfos">
         <div class="mainInfos">
           <h3>${city}, ${country}</h3>
-          <h1>${temp}&degC</h1>
+          <h1 class="temp">${temp}&degC</h1>
         </div>
         <div class="moreInfos">
           <h3 class="subtitle">Mais informações</h3>

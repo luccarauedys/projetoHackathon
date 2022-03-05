@@ -29,8 +29,8 @@ section {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.8);
 }
-.home-title{
-  color: #D5D9E2;
+section h1{
+  color: #06303F;
   font-size: 40px;
   font-weight: bold;
   line-height: 1.2;
@@ -93,6 +93,10 @@ section button:hover{
   gap: 3px;
 }
 
+.temp{
+  font-size: 45px;
+}
+
 .moreInfos{
   display: grid;
   gap: 10px;
@@ -102,14 +106,14 @@ section button:hover{
   color: #05303F;
 }
 .infos{
-  color: #222;
+  color: black;
 }
 
 @media screen and (max-width: 900px){
   .container {
     width: 50%;
   }
-  .home-title {
+  section h1 {
     font-size: 35px;
     line-height: 1.2;
   }
